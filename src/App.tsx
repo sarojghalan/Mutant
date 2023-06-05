@@ -5,6 +5,7 @@ import InspirationBanner from "./Components/HomeComponents/InspirationBanner/Ins
 import MyInfo from "./Components/HomeComponents/MyInfo/MyInfo";
 import MyServices from "./Components/HomeComponents/MyServices/MyServices";
 import AboutMe from "./Components/HomeComponents/AboutMe/AboutMe";
+import MyProjects from "./Components/HomeComponents/MyProjects/MyProjects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <MyInfo />
       <MyServices />
       <AboutMe />
+      <MyProjects />
     </>
   );
 }
