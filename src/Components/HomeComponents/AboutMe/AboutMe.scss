@@ -1,0 +1,32 @@
+@import "../../../Scss/Main.scss";
+
+.main-1 {
+  background-color: var(--offwhite-color) !important;
+  .main-title {
+    text-align: center;
+    margin-bottom: 64px;
+    color: var(--primary-color);
+    h3 {
+      font-size: 36px;
+    }
+  }
+  .about-me-content {
+    .about-me-img {
+      text-align: center;
+      img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+  .about-me-description {
+    margin: 36px 0;
+    p {
+      color: var(--off-color);
+      font-style: italic;
+      text-align: justify;
+      letter-spacing: 0.6px;
+    }
+  }
+}

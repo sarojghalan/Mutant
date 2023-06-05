@@ -1,0 +1,219 @@
+:root {
+  --white-color: #fff;
+  --primary-color: #0199ae;
+  --secondary-color: #fef9f8;
+  --black-color: #0d0d0d;
+  --off-color: #919191;
+  --genuine-color: #fcf3ec;
+  --offwhite-color: #f2f2f3;
+  --font-fam1: "Alata", sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: var(--tertiary-color) !important;
+}
+p {
+  margin: 0px;
+}
+.container-fluid {
+  padding: 0px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .main {
+    padding: 30px 0px !important;
+  }
+  .main-sec-title {
+    margin-bottom: 2px !important;
+  }
+  .master-banner-img {
+    height: 350px !important;
+  }
+  .service-image img {
+    height: 200px !important ;
+    width: 200px !important;
+    object-fit: contain !important;
+    border-radius: 12px;
+  }
+  .service-content {
+    padding: 0px 20px !important;
+    text-align: justify !important;
+  }
+  .service-content-1 {
+    padding: 0px 20px !important;
+    text-align: justify !important;
+  }
+  .service-card {
+    margin-bottom: 40px !important;
+  }
+  .inspiration-title {
+    font-size: 20px !important;
+    font-weight: bold !important;
+  }
+  .master-banner-content {
+    position: absolute !important;
+    left: 1% !important;
+    padding: 36px !important;
+    top: -2% !important;
+    text-align: justify !important;
+  }
+  .bird-img {
+    position: absolute;
+    top: 50% !important;
+    left: 20% !important;
+  }
+  .mountain-img {
+    position: absolute;
+    top: 35%;
+    left: 10% !important;
+  }
+  .sun-img {
+    position: absolute;
+    top: 10% !important;
+    left: 75% !important;
+  }
+  .master-banner button {
+    left: 12% !important;
+    font-size: 12px !important;
+    padding: 4px 12px !important;
+  }
+  .about-me-description {
+    padding: 36px 0 !important;
+  }
+  .project-img {
+    width: 80% !important;
+  }
+  .project-img {
+    width: 90% !important;
+  }
+  .footer-ul {
+    padding: 0px !important;
+  }
+  .footer {
+    margin: 6px 0px 6px !important;
+  }
+  .footer-main {
+    height: 600px !important;
+  }
+  .footer-ul li > p > span {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-main {
+    height: 600px !important;
+  }
+  .footer {
+    margin: 6px 0px 6px !important;
+  }
+  .main {
+    padding: 30px 0px !important;
+  }
+  .main-sec-title {
+    margin-bottom: 2px !important;
+  }
+  .service-image img {
+    height: 300px !important ;
+    width: 300px !important;
+    object-fit: contain !important;
+    border-radius: 12px;
+  }
+  .service-content {
+    padding: 0px 20px !important;
+    text-align: justify !important;
+  }
+  .service-content-1 {
+    padding: 0px 20px !important;
+    text-align: justify !important;
+  }
+  .service-card {
+    margin-bottom: 40px !important;
+  }
+  .inspiration-title {
+    font-size: 28px !important;
+    font-weight: bold !important;
+  }
+  .master-banner-content {
+    position: absolute !important;
+    left: 1% !important;
+    padding: 36px !important;
+    top: 12% !important;
+    text-align: justify !important;
+  }
+  .master-banner-content p {
+    background-color: var(--off-color);
+    color: var(--white-color);
+    opacity: 60%;
+    padding: 6px;
+  }
+  .bird-img {
+    position: absolute;
+    top: 55% !important;
+    left: 20% !important;
+  }
+  .mountain-img {
+    position: absolute;
+    top: 35%;
+    left: 20% !important;
+  }
+  .sun-img {
+    position: absolute;
+    top: 20% !important;
+    left: 80% !important;
+  }
+  .master-banner button {
+    left: 12% !important;
+  }
+  .about-me-description {
+    padding: 0 36px !important;
+  }
+  .project-img {
+    width: 90% !important;
+  }
+  .footer-ul {
+    padding: 0px !important;
+  }
+  .footer-ul li > p > span {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .master-banner-content {
+    position: absolute !important;
+    left: 1% !important;
+    padding: 36px !important;
+    top: 12% !important;
+    text-align: justify !important;
+  }
+  .master-banner-content p {
+    background-color: var(--off-color);
+    color: var(--white-color);
+    opacity: 60%;
+    padding: 6px;
+  }
+  .bird-img {
+    position: absolute;
+    top: 55% !important;
+    left: 20% !important;
+  }
+  .mountain-img {
+    position: absolute;
+    top: 35%;
+    left: 20% !important;
+  }
+  .sun-img {
+    position: absolute;
+    top: 20% !important;
+    left: 80% !important;
+  }
+  .master-banner button {
+    left: 12% !important;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
