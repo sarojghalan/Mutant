@@ -1,0 +1,60 @@
+@import "../Scss/Main.scss";
+.main-1 {
+  background-color: var(--offwhite-color) !important;
+}
+.footer-main {
+  background-image: url("../Assets/footerback.png");
+  font-family: var(--font-fam1);
+  padding: 86px 0px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin-bottom: -1px;
+  .footer-content {
+    text-align: center;
+    img {
+      height: 150px;
+      width: 100%;
+      object-fit: contain;
+    }
+    h4 {
+      margin: 0px 0px 16px;
+    }
+    .button-main {
+      border: none;
+      padding: 8px 26px;
+      color: var(--white-color);
+      font-weight: 500;
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      &:hover {
+        background-color: var(--black-color);
+      }
+    }
+    .footer-ul {
+      text-align: justify !important;
+      padding: 0px 26px;
+      li {
+        line-height: 1.8;
+        p {
+          font-size: 16px !important;
+          opacity: 70%;
+          span {
+            color: var(--primary-color);
+            margin: 0px 8px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    letter-spacing: 1px;
+    p {
+      span {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
