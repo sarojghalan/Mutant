@@ -1,0 +1,13 @@
+@import "../../Scss/Main.scss";
+.inspiration-main {
+  padding: 40px 0px;
+  text-align: center;
+  font-family: var(--font-fam1);
+  .inspirtion-title {
+    color: var(--off-color);
+    font-size: 40px;
+    /* font-style: italic; */
+    letter-spacing: 0.5px;
+    margin: 16px 0;
+  }
+}

@@ -1,0 +1,103 @@
+@import "../../Scss/Main.scss";
+.service__page__section {
+  padding-top: 70px;
+  .service-card {
+    margin-bottom: 40px !important;
+    .my-service-img {
+      border-radius: 12px;
+      text-align: center;
+      img {
+        height: 400px;
+        width: 80%;
+        object-fit: contain;
+      }
+    }
+    .my-service-content {
+      padding: 26px 0px !important;
+      text-align: justify !important;
+      .main-sec-title {
+        text-align: left;
+        margin-bottom: 12px;
+        color: var(--off-color);
+        h4 {
+          .span-span {
+            margin-right: 6px;
+            color: var(--primary-color);
+          }
+        }
+      }
+      p {
+      }
+    }
+    .my-service-content-1 {
+      padding: 20px 0px !important;
+      text-align: justify !important;
+      .main-sec-title-2 {
+        text-align: right;
+        margin-bottom: 12px;
+        color: var(--off-color);
+        h4 {
+          .span-span {
+            margin-right: 6px;
+            color: var(--primary-color);
+          }
+        }
+      }
+      p {
+      }
+    }
+  }
+  .inspiration-main {
+    padding: 40px 0px;
+    text-align: center;
+    font-family: var(--font-fam1);
+    .saroj-g {
+      text-align: center !important;
+      color: var(--off-color);
+      letter-spacing: 1px;
+      h3 {
+      }
+      p {
+        letter-spacing: 1px;
+        color: #cb5933;
+      }
+    }
+    .hire-me-btn {
+      margin-top: 16px;
+      .button-main {
+        border: none;
+        padding: 8px 26px;
+        color: var(--white-color);
+        font-weight: 500;
+        border-radius: 4px;
+        background-color: var(--primary-color);
+        &:hover {
+          background-color: var(--black-color);
+        }
+      }
+    }
+  }
+  .modal-body{
+    text-align: justify !important;
+    font-family: var(--font-fam1);
+    padding: 0px 36px;
+    .hire-form {
+      .hire-input {
+        margin-bottom: 16px;
+        label {
+          color: var(--primary-color);
+          margin-bottom: 6px;
+        }
+        br {
+        }
+        input {
+          border-radius: 8px;
+          padding: 4px 16px;
+          width: 100%;
+          border: none;
+          border-bottom: 2px solid var(--primary-color) !important;
+        }
+      }
+    }
+  }
+}
