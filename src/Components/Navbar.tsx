@@ -28,6 +28,20 @@ function Navbar() {
   const [myService, setMyService] = useState<Service[]>([]);
   const [loading, setLoading] = useState(false);
   const [skillLoader, setSkillLoader] = useState(false);
+  const [navbarClass, setNavbarClass] = useState("main-navbar");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      setNavbarClass("main-navbar2");
+    } else {
+      setNavbarClass("main-navbar");
+    }
+  };
 
   useEffect(() => {
     setLoading(true);
@@ -156,7 +170,7 @@ function Navbar() {
     }
   });
   return (
-    <div className="main-navbar">
+    <div className={`${navbarClass}`}>
       <div className="container-fluid">
         <div className="container">
           <nav className="navbar navbar-expand-lg ">

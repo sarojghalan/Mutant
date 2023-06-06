@@ -5,6 +5,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin-top: 70px;
   .master-banner-img {
     height: 400px;
     width: 100%;
@@ -19,7 +20,7 @@
     color: var(--white-color);
     font-weight: 500;
     border-radius: 4px;
-    z-index: 9999;
+    // z-index: 9999;
     background-color: var(--primary-color);
     &:hover {
       background-color: var(--secondary-color);
