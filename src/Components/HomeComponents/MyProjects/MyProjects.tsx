@@ -26,8 +26,6 @@ const MyProjects: React.FC = () => {
     setLoading(false);
   }, []);
 
-  console.log("My Projects: ", myProjectData);
-
   const settings: Settings = {
     dots: false,
     infinite: true,

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Skeleton from "@mui/material/Skeleton";
+import Stack from "@mui/material/Stack";
 import firebaseDb from "../../../firebaseConfig";
 import { collection, query, onSnapshot } from "firebase/firestore";
 import "./MyInfo.scss";
@@ -33,7 +35,7 @@ const MyInfo: React.FC = () => {
       setLanguageData(languageInfo);
     });
     setLoading(false);
-    return () => unsubscribe(); 
+    return () => unsubscribe();
   }, []);
 
   const reverseLanguageData = languageData?.reverse();
@@ -45,10 +47,41 @@ const MyInfo: React.FC = () => {
           <p>
             <span className="welcome-span"> Hi I'm Saroj Ghalan</span>
           </p>
-          <p>{welcomeData[0]?.info}</p>
+          {welcomeData.length === 0 ? (
+            <Stack spacing={1} className="mb-2">
+              <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
+              <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
+              <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
+              <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
+            </Stack>
+          ) : (
+            <p>{welcomeData[0]?.info}</p>
+          )}
+
           <div className="row">
-            {loading ? (
-              <p>loading</p>
+            {languageData.length === 0 ? (
+              <div className="row">
+                <div className="col-md-3">
+                  <Stack spacing={1}>
+                    <Skeleton variant="rectangular" height={200} />
+                  </Stack>
+                </div>
+                <div className="col-md-3">
+                  <Stack spacing={1}>
+                    <Skeleton variant="rectangular" height={200} />
+                  </Stack>
+                </div>
+                <div className="col-md-3">
+                  <Stack spacing={1}>
+                    <Skeleton variant="rectangular" height={200} />
+                  </Stack>
+                </div>
+                <div className="col-md-3">
+                  <Stack spacing={1}>
+                    <Skeleton variant="rectangular" height={200} />
+                  </Stack>
+                </div>
+              </div>
             ) : (
               reverseLanguageData.map((get, keys) => {
                 return (

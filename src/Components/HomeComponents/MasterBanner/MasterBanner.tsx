@@ -6,7 +6,7 @@ import mountain from "../../../Assets/mountain.png";
 import bird from "../../../Assets/birds2.png";
 import sun from "../../../Assets/sun.png";
 import firebaseDb from "../../../firebaseConfig";
-import './MasterBanner.scss';
+import "./MasterBanner.scss";
 
 interface BannerData {
   masterBanner: string;
@@ -17,8 +17,8 @@ const MasterBanner: React.FC = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
     const q = query(collection(firebaseDb, "masterBanner"));
+    setLoading(true);
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const banner: BannerData[] = [];
       querySnapshot.forEach((doc) => {
@@ -30,10 +30,10 @@ const MasterBanner: React.FC = () => {
 
     return () => unsubscribe();
   }, []);
-
+  console.log("loading : ", masterBanner);
   return (
     <>
-      {loading ? (
+      {masterBanner.length === 0 ? (
         <Stack spacing={1}>
           <Skeleton variant="rectangular" height={500} />
         </Stack>
