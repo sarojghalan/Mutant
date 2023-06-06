@@ -2,7 +2,7 @@ import React from "react";
 import banner from "../../../Assets/banner.png";
 import './InspirationBanner.scss';
 
-const InspirationBanner: React.FC = () => {
+const InspirationBanner: React.FunctionComponent = () => {
   return (
     <div
       style={{ backgroundImage: `url(${banner})` }}

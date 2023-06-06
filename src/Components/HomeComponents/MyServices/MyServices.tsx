@@ -5,7 +5,7 @@ import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 import "./MyServices.scss";
 
-const MyServices: React.FC = () => {
+const MyServices: React.FunctionComponent = () => {
   const image = useRef<HTMLDivElement | null>(null);
   const image1 = useRef<HTMLDivElement | null>(null);
   const [imageExists, setImageExists] = useState(false);

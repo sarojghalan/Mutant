@@ -1,23 +1,13 @@
 import "./App.scss";
 import Navbar from "./Components/Navbar";
-import MasterBanner from "./Components/HomeComponents/MasterBanner/MasterBanner";
-import InspirationBanner from "./Components/HomeComponents/InspirationBanner/InspirationBanner";
-import MyInfo from "./Components/HomeComponents/MyInfo/MyInfo";
-import MyServices from "./Components/HomeComponents/MyServices/MyServices";
-import AboutMe from "./Components/HomeComponents/AboutMe/AboutMe";
-import MyProjects from "./Components/HomeComponents/MyProjects/MyProjects";
 import Footer from "./Components/Footer";
+import HomeRoutes from "./HomeRouting/HomeRoutes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <MasterBanner />
-      <InspirationBanner />
-      <MyInfo />
-      <MyServices />
-      <AboutMe />
-      <MyProjects />
+      <HomeRoutes />
       <Footer />
     </>
   );

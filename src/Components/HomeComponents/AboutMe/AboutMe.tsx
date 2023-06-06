@@ -3,9 +3,9 @@ import firebaseDb from "../../../firebaseConfig";
 import { collection, query, onSnapshot } from "firebase/firestore";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
-import './AboutMe.scss';
+import "./AboutMe.scss";
 
-const AboutMe: React.FC = () => {
+const AboutMe: React.FunctionComponent = () => {
   const image = useRef<HTMLDivElement | null>(null);
   const image1 = useRef<HTMLDivElement | null>(null);
   const [imageExists, setImageExists] = useState(false);

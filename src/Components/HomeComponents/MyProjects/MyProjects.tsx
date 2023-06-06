@@ -8,7 +8,7 @@ import Stack from "@mui/material/Stack";
 import "slick-carousel/slick/slick-theme.css";
 import './MyProjects.scss';
 
-const MyProjects: React.FC = () => {
+const MyProjects: React.FunctionComponent = () => {
   const slider = useRef<Slider | null>(null);
   const [myProjectData, setMyProjectData] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
@@ -27,7 +27,7 @@ const MyProjects: React.FC = () => {
   }, []);
 
   const settings: Settings = {
-    dots: false,
+    dots: false, 
     infinite: true,
     speed: 500,
     slidesToShow: 1,

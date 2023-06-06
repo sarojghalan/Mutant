@@ -12,7 +12,7 @@ interface BannerData {
   masterBanner: string;
 }
 
-const MasterBanner: React.FC = () => {
+const MasterBanner: React.FunctionComponent = () => {
   const [masterBanner, setMasterBanner] = useState<BannerData[]>([]);
   const [loading, setLoading] = useState(false);
 

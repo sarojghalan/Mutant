@@ -1,0 +1,107 @@
+@import "../../Scss/Main.scss";
+.about__section {
+  padding-top: 100px;
+  background-color: var(--offwhite-color) !important;
+  .about-back {
+    background-image: url("../../Assets/banner1.png");
+    .main {
+      font-family: var(--font-fam1);
+      padding: 64px 0;
+    }
+    .main-title {
+      text-align: center;
+      margin-bottom: 64px;
+      color: var(--primary-color);
+      h3 {
+        font-size: 36px;
+      }
+    }
+    .about-slider {
+      text-align: center;
+      .button-main {
+        border: none;
+        padding: 8px 26px;
+        color: var(--white-color);
+        font-weight: 500;
+        border-radius: 4px;
+        background-color: var(--primary-color);
+        &:hover {
+          background-color: var(--black-color);
+        }
+        span {
+          margin: 0px 8px;
+        }
+      }
+      .slider-arrow {
+        ul {
+          li {
+            display: inline-block;
+            .slider-p {
+              color: var(--secondary-color);
+              background-color: var(--primary-color);
+              margin: 12px 26px 0px;
+              font-size: 14px !important;
+              padding: 4px 16px;
+              cursor: pointer;
+              border-radius: 4px;
+              .slider-span1 {
+                margin-right: 8px;
+              }
+              .slider-span2 {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+      .slider-arrow-1 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+        ul {
+          li {
+            display: inline-block;
+            .slider-p {
+              color: var(--secondary-color);
+              background-color: var(--primary-color);
+              margin: 12px 26px 0px;
+              font-size: 14px !important;
+              padding: 4px 16px;
+              cursor: pointer;
+              border-radius: 4px;
+              .slider-span1 {
+                margin-right: 8px;
+              }
+              .slider-span2 {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+      .project-title {
+        font-weight: 500;
+        color: var(--off-color);
+        font-size: 20px;
+        span {
+          color: var(--primary-color);
+          margin: 0px 12px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+.modal-body {
+  text-align: justify !important;
+  font-family: var(--font-fam1);
+  padding: 0px 36px;
+}
+.slick-slide img {
+  display: initial !important;
+}
+.slick-prev:before {
+  display: none !important;
+}
+.slick-next:before {
+  display: none !important;
+}

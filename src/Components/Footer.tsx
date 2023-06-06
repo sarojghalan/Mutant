@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from '../Assets/logosaroj.png'
 import './Footer.scss';
 
-const Footer = () => {
+const Footer:React.FunctionComponent = () => {
   return (
     <div className="footer-main main-1 ">
       <div className="container">

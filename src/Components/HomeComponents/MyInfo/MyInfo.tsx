@@ -5,7 +5,7 @@ import firebaseDb from "../../../firebaseConfig";
 import { collection, query, onSnapshot } from "firebase/firestore";
 import "./MyInfo.scss";
 
-const MyInfo: React.FC = () => {
+const MyInfo: React.FunctionComponent = () => {
   const [welcomeData, setWelcomeData] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [languageData, setLanguageData] = useState<any[]>([]);
