@@ -55,28 +55,28 @@ const MyInfo: React.FunctionComponent = () => {
               <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
             </Stack>
           ) : (
-            <p>{welcomeData[0]?.info}</p>
+            <p className="saroj-welcome-info">{welcomeData[0]?.info}</p>
           )}
 
           <div className="row">
             {languageData.length === 0 ? (
               <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 col-sm-12 col-12">
                   <Stack spacing={1}>
                     <Skeleton variant="rectangular" height={200} />
                   </Stack>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 col-sm-12 col-12">
                   <Stack spacing={1}>
                     <Skeleton variant="rectangular" height={200} />
                   </Stack>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 col-sm-12 col-12">
                   <Stack spacing={1}>
                     <Skeleton variant="rectangular" height={200} />
                   </Stack>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 col-sm-12 col-12">
                   <Stack spacing={1}>
                     <Skeleton variant="rectangular" height={200} />
                   </Stack>
@@ -85,7 +85,7 @@ const MyInfo: React.FunctionComponent = () => {
             ) : (
               reverseLanguageData.map((get, keys) => {
                 return (
-                  <div className="col-md-3" key={keys}>
+                  <div className="col-md-6 col-lg-3 col-sm-12 col-12" key={keys}>
                     <div className="card-skill">
                       <img src={get?.image} alt="" />
                       <p>{get?.title}</p>
