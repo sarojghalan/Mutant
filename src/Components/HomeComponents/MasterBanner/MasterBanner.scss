@@ -1,20 +1,19 @@
 @import "../../../Scss/Main.scss";
 .master-banner {
   font-family: var(--font-fam1);
-  height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 70px;
   .master-banner-img {
-    height: 400px;
+    padding-top: 33vh;
+    height: 100vh;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   button {
     position: absolute;
-    top: 80%;
-    left: 15%;
+    top: 65%;
+    left: 13%;
     border: none;
     padding: 8px 26px;
     color: var(--white-color);
@@ -31,13 +30,14 @@
   }
   .mountain-img {
     position: absolute;
-    top: 35%;
+    top: 52%;
     left: 60%;
   }
   .sun-img {
     position: absolute;
-    top: 30%;
-    left: 70%;
+    top: 20%;
+    left: 80%;
+    height: 150px;
   }
   .bird-img {
     position: absolute;
@@ -46,9 +46,9 @@
   }
   .master-banner-content {
     position: absolute;
-    left: 12%;
-    padding: 36px;
-    top: 15%;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%, 0%);
     text-align: justify !important;
     .saroj-info {
       h4 {
