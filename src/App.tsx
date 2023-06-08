@@ -1,5 +1,5 @@
 import "./App.scss";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Layouts/Navbar/Navbar";
 import Footer from "./Components/Footer";
 import HomeRoutes from "./HomeRouting/HomeRoutes";
 

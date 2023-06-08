@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import firebaseDb from "../firebaseConfig";
-import logo from "../Assets/logosaroj.png";
-import { deleteDoc, doc, setDoc } from "firebase/firestore";
+import firebaseDb from "../../firebaseConfig";
+import { logoSaroj } from "../../Assets";
 import { collection, query, where, onSnapshot } from "firebase/firestore";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 import { NavLink } from "react-router-dom";
-import "./Navbar.scss";
+import "../../Scss/Main.scss";
 
 interface NavbarList {
   id: string;
@@ -14,11 +13,17 @@ interface NavbarList {
 }
 
 interface Skill {
+  createdAt: string;
+  description: string;
+  id: string;
   skill: string;
 }
 
 interface Service {
+  description: string;
+  id: string;
   title: string;
+  image: string;
   description_title: string;
 }
 
@@ -27,8 +32,8 @@ function Navbar() {
   const [mySkill, setMySkill] = useState<Skill[]>([]);
   const [myService, setMyService] = useState<Service[]>([]);
   const [loading, setLoading] = useState(false);
-  const [skillLoader, setSkillLoader] = useState(false);
-  const [navbarClass, setNavbarClass] = useState("main-navbar");
+  const [skillLoader, setSkillLoader] = useState<boolean>(false);
+  const [navbarClass, setNavbarClass] = useState<string>("main__navbar");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -37,9 +42,9 @@ function Navbar() {
 
   const handleScroll = () => {
     if (window.pageYOffset > 0) {
-      setNavbarClass("main-navbar2");
+      setNavbarClass("main__navbar__2");
     } else {
-      setNavbarClass("main-navbar");
+      setNavbarClass("main__navbar");
     }
   };
 
@@ -55,6 +60,8 @@ function Navbar() {
     });
     setLoading(false);
   }, []);
+
+  console.log("navbar  : ", myService);
 
   useEffect(() => {
     setSkillLoader(true);
@@ -85,7 +92,7 @@ function Navbar() {
         <>
           <li className="nav-item dropdown" key={keys}>
             <a
-              className="nav-link dropdown-toggle"
+              className="nav__link dropdown-toggle"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -118,7 +125,7 @@ function Navbar() {
         <>
           <li className="nav-item dropdown" key={keys}>
             <a
-              className="nav-link dropdown-toggle"
+              className="nav__link dropdown-toggle"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -132,15 +139,15 @@ function Navbar() {
                 return (
                   <li key={keys}>
                     <NavLink to="/my_services">
-                      <p className="dropdown-item-1">
-                        <span className="span-span">
+                      <p className="dropdown-item__1">
+                        <span className="span__span">
                           <i className="fa-solid fa-feather-pointed"></i>
                         </span>
                         {get.title}
                       </p>
                     </NavLink>
                     <NavLink to="/my_services">
-                      <p className="dropdown-sub-list">
+                      <p className="dropdown__sub__list">
                         {get.description_title}
                       </p>
                     </NavLink>
@@ -155,12 +162,12 @@ function Navbar() {
       return (
         <li className="nav-item" key={keys}>
           {get.id == "5y41csy64oWqYHLHEeFa" ? (
-            <NavLink className="nav-link" to="/about_me">
+            <NavLink className="nav__link" to="/about_me">
               {get.title}
             </NavLink>
           ) : (
             get.id == "fMGmnDck4PQPuNUG2Evj" && (
-              <NavLink className="nav-link" to="/my_projects">
+              <NavLink className="nav__link" to="/my_projects">
                 {get.title}
               </NavLink>
             )
@@ -175,8 +182,8 @@ function Navbar() {
         <div className="container">
           <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid">
-              <NavLink className="navbar-brand" to="/">
-                <img className="logo" src={logo} alt="" />
+              <NavLink className="navbar__brand" to="/">
+                <img className="logo" src={logoSaroj} alt="" />
               </NavLink>
               <button
                 className="navbar-toggler"

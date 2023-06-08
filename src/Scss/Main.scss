@@ -12,7 +12,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-li {
+li { 
   list-style-type: none;
 }
 a {
@@ -24,6 +24,7 @@ p {
 .container-fluid {
   padding: 0px;
 }
+@import './layouts/_layouts-dir';
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .main {
     padding: 30px 0px !important;
@@ -117,9 +118,6 @@ p {
   .footer-content{
     margin-bottom: 12px;
   }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px){
-
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .footer-main {
