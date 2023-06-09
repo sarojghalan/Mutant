@@ -1,0 +1,74 @@
+@import '../abstracts/variables';
+.master__banner {
+  font-family: $font-fam1;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .master__banner__img {
+    padding-top: 33vh;
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+  }
+  button {
+    position: absolute;
+    top: 65%;
+    left: 13%;
+    border: none;
+    padding: 8px 26px;
+    color: $white-color;
+    font-weight: 500;
+    border-radius: 4px;
+    // z-index: 9999;
+    background-color: $primary-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+      opacity: 100%;
+      font-weight: bold;
+    }
+  }
+  .mountain__img {
+    position: absolute;
+    top: 52%;
+    left: 60%;
+  }
+  .sun__img {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    height: 150px;
+  }
+  .bird__img {
+    position: absolute;
+    top: 60%;
+    left: 90%;
+  }
+  .master__banner__content {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%, 0%);
+    text-align: justify !important;
+    .saroj__info {
+      h4 {
+        font-style: italic;
+        opacity: 80%;
+        .banner__span {
+          color: $primary-color;
+          font-size: 30px;
+          font-weight: bold;
+        }
+      }
+      h5 {
+        font-style: italic;
+        opacity: 80%;
+        .banner__span {
+          color: $primary-color;
+          font-size: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

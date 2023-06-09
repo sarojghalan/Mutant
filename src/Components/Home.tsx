@@ -1,5 +1,5 @@
 import React from "react";
-import MasterBanner from "./HomeComponents/MasterBanner/MasterBanner";
+import MasterBanner from "../Layouts/MasterBanner/MasterBanner";
 import InspirationBanner from "./HomeComponents/InspirationBanner/InspirationBanner";
 import MyInfo from "./HomeComponents/MyInfo/MyInfo";
 import MyServices from "./HomeComponents/MyServices/MyServices";
