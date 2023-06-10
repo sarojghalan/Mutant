@@ -1,0 +1,18 @@
+@import "../abstracts/variables";
+
+.inspiration__main {
+  padding: 40px 0px;
+  text-align: center;
+  font-family: $font-fam1;
+  .inspiration__title {
+    color: $off-color;
+    font-size: 40px;
+    /* font-style: italic; */
+    letter-spacing: 0.5px;
+    margin: 16px 0;
+    span {
+      font-weight: bold;
+      margin-right: 12px;
+    }
+  }
+}

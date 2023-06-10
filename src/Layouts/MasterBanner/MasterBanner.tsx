@@ -5,6 +5,7 @@ import { collection, query, onSnapshot } from "firebase/firestore";
 import { mountain, birds2, sun } from "../../Assets";
 import firebaseDb from "../../firebaseConfig";
 import "../../Scss/Main.scss";
+import Button from "../../Components/Button/Button";
 
 interface BannerData {
   masterBanner: string;
@@ -27,6 +28,11 @@ const MasterBanner: React.FunctionComponent = () => {
     return () => unsubscribe();
   }, []);
 
+  const onclickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    console.log("haha")
+  };
+
   return (
     <>
       {masterBanner.length === 0 ? (
@@ -40,7 +46,13 @@ const MasterBanner: React.FunctionComponent = () => {
             src={masterBanner[0]?.masterBanner}
             alt="Master Banner"
           />
-          <button>See My Works</button>
+          {/* <button className="mster__banner__button">See My Works</button> */}
+          <Button
+            style="master__banner__button"
+            handler={onclickHandler}
+            disabled={false}
+            name="See My Works"
+          />
           <img className="mountain__img" src={mountain} alt="Mountain" />
           <img className="sun__img" src={sun} alt="Sun" />
           <img className="bird__img" src={birds2} alt="Bird" />
