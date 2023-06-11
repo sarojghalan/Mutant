@@ -5,14 +5,14 @@ import firebaseDb from "../../firebaseConfig";
 import { collection, query, onSnapshot } from "firebase/firestore";
 import "../../Scss/Main.scss";
 import SkillCard from "../../Components/Card/SkillCard";
+import { WelcomeInterface } from "../../Interface/WelcomeInterface";
+import { LanguageInterface } from "../../Interface/LanguageInterface";
 
 const MyInfo: React.FunctionComponent = () => {
-  const [welcomeData, setWelcomeData] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-  const [languageData, setLanguageData] = useState<any[]>([]);
+  const [welcomeData, setWelcomeData] = useState<WelcomeInterface[]>([]);
+  const [languageData, setLanguageData] = useState<LanguageInterface[]>([]);
 
   useEffect(() => {
-    setLoading(true);
     const q = query(collection(firebaseDb, "welcome"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const welcomeInfo: any[] = [];
@@ -21,12 +21,10 @@ const MyInfo: React.FunctionComponent = () => {
       });
       setWelcomeData(welcomeInfo);
     });
-    setLoading(false);
     return () => unsubscribe();
   }, []);
 
   useEffect(() => {
-    setLoading(true);
     const q = query(collection(firebaseDb, "language"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const languageInfo: any[] = [];
@@ -35,18 +33,20 @@ const MyInfo: React.FunctionComponent = () => {
       });
       setLanguageData(languageInfo);
     });
-    setLoading(false);
     return () => unsubscribe();
   }, []);
+
+  console.log(languageData);
+  console.log(welcomeData);
 
   const reverseLanguageData = languageData?.reverse();
 
   return (
     <div className="main-1">
       <div className="container">
-        <div className="welcome-div">
+        <div className="welcome__div">
           <p>
-            <span className="welcome-span"> Hi I'm Saroj Ghalan</span>
+            <span className="welcome__span"> Hi I'm Saroj Ghalan</span>
           </p>
           {welcomeData.length === 0 ? (
             <Stack spacing={1} className="mb-2">
@@ -56,7 +56,7 @@ const MyInfo: React.FunctionComponent = () => {
               <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
             </Stack>
           ) : (
-            <p className="saroj-welcome-info">{welcomeData[0]?.info}</p>
+            <p className="saroj__welcome__info">{welcomeData[0]?.info}</p>
           )}
 
           <div className="row">
