@@ -6,22 +6,17 @@ import { mountain, birds2, sun } from "../../Assets";
 import firebaseDb from "../../firebaseConfig";
 import "../../Scss/Main.scss";
 import Button from "../../Components/Button/Button";
-
-interface BannerData {
-  masterBanner: string;
-  description: string;
-  id: string;
-}
+import { MasterBannerInterface } from "../../Interface/MasterBannerInterface";
 
 const MasterBanner: React.FunctionComponent = () => {
-  const [masterBanner, setMasterBanner] = useState<BannerData[]>([]);
+  const [masterBanner, setMasterBanner] = useState<MasterBannerInterface[]>([]);
 
   useEffect(() => {
     const q = query(collection(firebaseDb, "masterBanner"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const banner: BannerData[] = [];
+      const banner: any[] = [];
       querySnapshot.forEach((doc) => {
-        banner.push(doc.data() as BannerData);
+        banner.push(doc.data());
       });
       setMasterBanner(banner);
     });
@@ -30,7 +25,7 @@ const MasterBanner: React.FunctionComponent = () => {
 
   const onclickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log("haha")
+    console.log("haha");
   };
 
   return (
