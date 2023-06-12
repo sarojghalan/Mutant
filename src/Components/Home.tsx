@@ -12,8 +12,8 @@ const Home: React.FunctionComponent = () => {
       <MasterBanner />
       <InspirationBanner />
       <MyInfo />
-      {/* <MyServices />
-      <AboutMe />
+      <MyServices />
+      {/* <AboutMe />
       <MyProjects /> */}
     </>
   );
