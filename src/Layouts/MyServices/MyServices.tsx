@@ -68,9 +68,9 @@ const MyServices: React.FunctionComponent = () => {
   }, [imageExists1]);
   return (
     <div className="main">
-      <div className="service-main">
+      <div className="service__main">
         <div className="container">
-          <div className="main-title">
+          <div className="main__title">
             <h3>My Services</h3>
           </div>
           {serviceData.length === 0 ? (
@@ -82,7 +82,7 @@ const MyServices: React.FunctionComponent = () => {
               return (
                 <>
                   {keys % 2 == 0 ? (
-                    <div className="service-card" key={keys}>
+                    <div className="service__card" key={keys}>
                       <div className="row">
                         <div className="col-md-5">
                           <div
@@ -90,7 +90,7 @@ const MyServices: React.FunctionComponent = () => {
                               image.current = el;
                               setImageExists(true);
                             }}
-                            className="service-image "
+                            className="service__image "
                           >
                             <img src={get.image} alt="" />
                           </div>
@@ -101,18 +101,18 @@ const MyServices: React.FunctionComponent = () => {
                               image1.current = el;
                               setImageExists1(true);
                             }}
-                            className="service-content"
+                            className="service__content"
                           >
-                            <div className="main-sec-title">
+                            <div className="main__sec__title">
                               <h4>
-                                <span className="span-span">
+                                <span className="span__span">
                                   <i className="fa-solid fa-feather-pointed"></i>
                                 </span>
                                 {get?.title}
                               </h4>
                             </div>
                             <p>{get.description}</p>
-                            <button className="button-main">
+                            <button className="button__main">
                               {" "}
                               Want to Read More
                             </button>
@@ -122,7 +122,7 @@ const MyServices: React.FunctionComponent = () => {
                       </div>
                     </div>
                   ) : (
-                    <div className="service-card" key={keys}>
+                    <div className="service__card" key={keys}>
                       <div className="row">
                         <div className="col-md-1"></div>
                         <div className="col-md-6 order-md-second order-lg-second order-second">
@@ -131,18 +131,18 @@ const MyServices: React.FunctionComponent = () => {
                               image.current = el;
                               setImageExists(true);
                             }}
-                            className="service-content-1"
+                            className="service__content__1"
                           >
-                            <div className="main-sec-title-2">
+                            <div className="main__sec__title__2">
                               <h4>
-                                <span className="span-span">
+                                <span className="span__span">
                                   <i className="fa-solid fa-feather-pointed"></i>
                                 </span>
                                 {get?.title}
                               </h4>
                             </div>
                             <p>{get.description}</p>
-                            <button className="button-main">
+                            <button className="button__main">
                               Want to Read More
                             </button>
                           </div>
@@ -153,7 +153,7 @@ const MyServices: React.FunctionComponent = () => {
                               image1.current = el;
                               setImageExists1(true);
                             }}
-                            className="service-image "
+                            className="service__image "
                           >
                             <img src={get.image} alt="" />
                           </div>

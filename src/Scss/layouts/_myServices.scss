@@ -2,25 +2,25 @@
 .main {
   font-family: $fontFamily;
   padding: 64px 0;
-  .service-main {
-    .main-title {
+  .service__main {
+    .main__title {
       text-align: center;
       margin-bottom: 64px;
-      color: $primary-color;;
+      color: $primary-color;
       h3 {
         font-size: 36px;
       }
     }
-    .service-card {
-      .service-content {
+    .service__card {
+      .service__content {
         padding: 40px 0 36px;
         text-align: left;
-        .main-sec-title {
+        .main__sec__title {
           text-align: left;
           margin-bottom: 12px;
           color: $off-color;
           h4 {
-            .span-span {
+            .span__span {
               margin-right: 6px;
               color: $primary-color;
             }
@@ -32,7 +32,7 @@
           letter-spacing: 1px;
           margin-bottom: 16px;
         }
-        .button-main {
+        .button__main {
           border: none;
           padding: 8px 26px;
           color: $white-color;
@@ -44,7 +44,7 @@
           }
         }
       }
-      .service-content-1 {
+      .service__content__1 {
         padding: 40px 0 36px;
         text-align: right;
         p {
@@ -53,12 +53,12 @@
           opacity: 80%;
           margin-bottom: 16px;
         }
-        .main-sec-title-2 {
+        .main__sec__title__2 {
           text-align: right;
           margin-bottom: 12px;
           color: $off-color;
         }
-        .button-main {
+        .button__main {
           border: none;
           padding: 8px 26px;
           color: $white-color;
@@ -70,7 +70,7 @@
           }
         }
       }
-      .service-image {
+      .service__image {
         text-align: center;
         img {
           height: 300px;
