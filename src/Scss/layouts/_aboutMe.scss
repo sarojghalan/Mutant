@@ -1,0 +1,32 @@
+@import "../abstracts/variables";
+
+.about__me__wrapper {
+  background-color: $offwhite-color !important;
+  .main__title {
+    text-align: center;
+    margin-bottom: 64px;
+    color: $primary-color;
+    h3 {
+      font-size: 36px;
+    }
+  }
+  .about__me__content {
+    .about__me__img {
+      text-align: center;
+      img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+  .about__me__description {
+    margin: 36px 0;
+    p {
+      color: $off-color;
+      font-style: italic;
+      text-align: justify;
+      letter-spacing: 0.6px;
+    }
+  }
+}

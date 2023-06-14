@@ -57,7 +57,6 @@ const ServicePage = () => {
 
   const submitHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log("hahah")
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (
       customerData.customerName === "" &&

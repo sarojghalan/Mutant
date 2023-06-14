@@ -25,7 +25,6 @@ const MasterBanner: React.FunctionComponent = () => {
 
   const onclickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log("haha");
   };
 
   return (

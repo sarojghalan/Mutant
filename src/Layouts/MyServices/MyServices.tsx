@@ -27,13 +27,10 @@ const MyServices: React.FunctionComponent = () => {
     setLoading(false);
   }, []);
 
-  console.log("service data", serviceData);
-
   useEffect(() => {
     if (imageExists) {
       const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-          console.log("intersected");
           image?.current?.classList.add(
             "animate__animated",
             "animate__backInLeft"
@@ -52,7 +49,6 @@ const MyServices: React.FunctionComponent = () => {
     if (imageExists1) {
       const observer1 = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-          console.log("intersected1");
           image1.current?.classList.add(
             "animate__animated",
             "animate__backInRight"

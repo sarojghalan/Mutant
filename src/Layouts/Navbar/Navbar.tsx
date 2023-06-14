@@ -61,8 +61,6 @@ function Navbar() {
     setLoading(false);
   }, []);
 
-  console.log("navbar  : ", myService);
-
   useEffect(() => {
     setSkillLoader(true);
     const q = query(collection(firebaseDb, "myskill"));

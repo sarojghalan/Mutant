@@ -36,9 +36,6 @@ const MyInfo: React.FunctionComponent = () => {
     return () => unsubscribe();
   }, []);
 
-  console.log(languageData);
-  console.log(welcomeData);
-
   const reverseLanguageData = languageData?.reverse();
 
   return (
