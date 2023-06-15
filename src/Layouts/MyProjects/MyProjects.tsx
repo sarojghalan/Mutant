@@ -40,7 +40,7 @@ const MyProjects: React.FunctionComponent = () => {
   return (
     <div className="main">
       <div className="container">
-        <div className="main-title">
+        <div className="main__title">
           <h3>Welcome To My Recent Works</h3>
         </div>
         {loading ? (
@@ -48,17 +48,17 @@ const MyProjects: React.FunctionComponent = () => {
             <Skeleton variant="rectangular" height={500} />
           </Stack>
         ) : (
-          <div className="myproject-content">
+          <div className="my__project__content">
             <Slider ref={slider} {...settings}>
               {myProjectData.map((get, keys): JSX.Element => {
                 return (
                   <React.Fragment key={keys}>
-                    <div className="project-slider">
+                    <div className="project__slider">
                       <a target="_blank" href={get.link} rel="noreferrer">
-                        <img className="project-img" src={get.image} alt="" />
+                        <img className="project__img" src={get.image} alt="" />
                       </a>
                     </div>
-                    <div className="project-title">
+                    <div className="project__title">
                       <span>
                         <i className="fa-solid fa-fire-flame-curved"></i>
                       </span>
@@ -71,14 +71,14 @@ const MyProjects: React.FunctionComponent = () => {
                 );
               })}
             </Slider>
-            <div className="slider-arrow">
+            <div className="slider__arrow">
               <ul>
                 <li>
                   <p
-                    className="slider-p"
+                    className="slider__p"
                     onClick={() => slider?.current?.slickPrev()}
                   >
-                    <span className="slider-span1">
+                    <span className="slider__span1">
                       <i className="fa-solid fa-circle-left"></i>
                     </span>
                     Prev
@@ -86,11 +86,11 @@ const MyProjects: React.FunctionComponent = () => {
                 </li>
                 <li>
                   <p
-                    className="slider-p"
+                    className="slider__p"
                     onClick={() => slider?.current?.slickNext()}
                   >
                     Next{" "}
-                    <span className="slider-span2">
+                    <span className="slider__span2">
                       <i className="fa-solid fa-circle-right"></i>
                     </span>
                   </p>

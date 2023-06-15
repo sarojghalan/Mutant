@@ -1,53 +1,53 @@
 @import "../abstracts/variables";
 .main {
-  font-family: var(--font-fam1);
+  font-family: $font-fam1;
   padding: 64px 0;
-  .main-title {
+  .main__title {
     text-align: center;
     margin-bottom: 64px;
-    color: var(--primary-color);
+    color: $primary-color;
     h3 {
       font-size: 36px;
     }
   }
-  .myproject-content {
+  .my__project__content {
     text-align: center !important;
-    .project-slider {
+    .project__slider {
       text-align: center !important;
       a {
-        .project-img {
+        .project__img {
           height: 400px;
           width: 100%;
           object-fit: contain;
         }
       }
     }
-    .project-title {
+    .project__title {
       font-weight: 500;
-      color: var(--off-color);
+      color: $off-color;
       font-size: 20px;
       span {
-        color: var(--primary-color);
+        color: $primary-color;
         margin: 0px 12px;
         font-size: 12px;
       }
     }
-    .slider-arrow {
+    .slider__arrow {
       ul {
         li {
           display: inline-block;
-          .slider-p {
-            color: var(--secondary-color);
-            background-color: var(--primary-color);
+          .slider__p {
+            color: $secondary-color;
+            background-color: $primary-color;
             margin: 12px 26px 0px;
             font-size: 14px !important;
             padding: 4px 16px;
             cursor: pointer;
             border-radius: 4px;
-            .slider-span1 {
+            .slider__span1 {
               margin-right: 8px;
             }
-            .slider-span-2 {
+            .slider-span__2 {
               margin-left: 8px;
             }
           }
