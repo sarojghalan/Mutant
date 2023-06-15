@@ -27,8 +27,6 @@ const AboutMe: React.FunctionComponent = () => {
     setLoading(false);
   }, []);
 
-  console.log(aboutMe);
-
   useEffect(() => {
     if (imageExists) {
       const observer = new IntersectionObserver((entries) => {
