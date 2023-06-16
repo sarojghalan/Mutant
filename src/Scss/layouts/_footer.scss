@@ -1,0 +1,60 @@
+@import "../abstracts/variables";
+.main__1 {
+  background-color: $offwhite-color !important;
+}
+.footer__main {
+  background-image: url("../Assets/footerback.png");
+  font-family: $font-fam1;
+  padding: 86px 0px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin-bottom: -1px;
+  .footer__content {
+    text-align: center;
+    img {
+      height: 150px;
+      width: 100%;
+      object-fit: contain;
+    }
+    h4 {
+      margin: 0px 0px 16px;
+    }
+    .button__main {
+      border: none;
+      padding: 8px 26px;
+      color: $white-color;
+      font-weight: 500;
+      border-radius: 4px;
+      background-color: $primary-color;
+      &:hover {
+        background-color: $black-color;
+      }
+    }
+    .footer__ul {
+      text-align: justify;
+      padding: 0px 26px;
+      li {
+        line-height: 1.8;
+        p {
+          font-size: 16px !important;
+          opacity: 70%;
+          span {
+            color: $primary-color;
+            margin: 0px 8px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    letter-spacing: 1px;
+    p {
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import "./App.scss";
 import Navbar from "./Layouts/Navbar/Navbar";
-import Footer from "./Components/Footer";
+import Footer from "./Layouts/Footer/Footer";
 import HomeRoutes from "./HomeRouting/HomeRoutes";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <HomeRoutes />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
